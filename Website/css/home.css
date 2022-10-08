@@ -1,0 +1,255 @@
+/* ---------- Current Page ---------- */
+
+#home{
+    background-color: rgb(240, 240, 240);
+    border-color: #00ca8f;
+    border-left-style: solid;
+    border-left-width: 5px;
+}
+
+#home:hover {
+    background-color: rgb(230, 230, 230);
+}
+
+/* ---------- Content ---------- */
+#content{
+    margin: 0;
+}
+
+#intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(180, 180, 180);
+    overflow-x: hidden;
+}
+
+#desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: white;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    max-width: 90vw;
+}
+
+#desc p{
+    letter-spacing: 1px;
+    font-size: 1rem;
+    line-height: 2rem;
+    width: 70%;
+    margin: 0;
+}
+
+#title{
+    font-size: 5rem;
+}
+
+video{
+    min-width: 100%;
+    min-height: 100vh;
+}
+
+
+.section{
+    padding: 10% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#agents2{
+    background-color: rgb(200, 200, 200);
+    background-image: linear-gradient(to bottom left,rgba(255, 0, 0, 0), rgb(200, 200, 200)), url("../../Image Source/pattern/bright_squares_@2X.png");
+}
+
+#maps2{
+    background-image: linear-gradient(to bottom left,rgba(255, 0, 0, 0) 10%, rgba(220, 220, 220, 0.8), rgb(220, 220, 220) 70%), url("../../Image Source/maps/Haven-Map-removebg-preview.png");
+    background-position-x: right;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.preview{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.desc2{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title2{
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    font-size: 5vw;
+    margin: 0;
+}
+
+.text{
+    color: rgb(80, 80, 80);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1rem;
+    line-height: 2rem;
+    text-align: justify;
+    text-align-last: center;
+    padding: 5vw;
+}
+
+.view{
+    padding: 15px 25px;
+    background-color: #00ca8f;
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+    border-style: inset;
+    border-color: #00ca8f;
+    border-width: 3.5px;
+    border-radius: 7px;
+    color: white;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.view:hover{
+    transition: 0.2s;
+    background-color: #00efaa;
+    border-color: #00efaa;
+}
+
+.view:active{
+    transition: none;
+    border-style: outset;
+}
+
+#agentimage{
+    position: relative;
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#agentimage img{
+    width: 100%;
+}
+
+#leftagent{
+    width: 50%;
+    position: absolute;
+    transform: translate(-30%,10%);
+    z-index: 1;
+}
+
+#rightagent{
+    width: 50%;
+    position: absolute;
+    transform: translate(25%, 0);
+}
+
+#agentimage a{
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    left: 0;
+}
+
+#preregisterNow{
+    text-align: center;
+    font-size: 2rem;
+    padding: 25px;
+    background-color: #00ca8f;
+    border-bottom-style: inset;
+    border-top-style: inset;
+    border-color: #00ca8f;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+#preregisterNow a:hover{
+    transition: 0.3s;
+    color: white;
+}
+
+@media screen and (max-width: 800px){
+    #desc p{
+        line-height: 2rem;
+        font-size: 1.1rem;
+        width: 90%;
+    }
+
+    #title{
+        font-size: 4.5rem;
+    }
+
+    .desc2{
+        width: 60%;
+    }
+
+    .title2{
+        font-size: 7vw;
+    }
+
+    .text{
+        font-size: 1rem;
+    }
+
+    .view{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+    video{
+        min-height: 75vh;
+    }
+
+    #title{
+        font-size: 12vw;
+    }
+    
+    #desc p{
+        line-height: 4vw;
+        font-size: 3vw;
+    }
+
+    .preview{
+        flex-direction: column;
+    }
+
+    .desc2{
+        width: 100%;
+    }
+
+    .text{
+        line-height: 1.5rem;
+    }
+
+    .title2{
+        font-size: 12vw;
+    }
+
+    #agentimage{
+        width: 100%;
+    }
+
+    #agentimage a{
+        bottom: 35%;
+    }
+
+    #rightagent{
+        position: unset;
+    }
+}

@@ -1,0 +1,121 @@
+/* ---------- Current Page ---------- */
+
+#systemReq{
+    background-color: rgb(240, 240, 240);
+}
+
+#systemReq:hover {
+    background-color: rgb(230, 230, 230);
+}
+
+#sysReq{
+    background-color: rgb(240, 240, 240);
+    border-color: #00ca8f;
+    border-left-style: solid;
+    border-left-width: 5px;
+}
+
+#sysReq:hover {
+    background-color: rgb(230, 230, 230);
+}
+
+/* ---------- Content ---------- */
+
+#content{
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#title{
+    text-align: center;
+    margin-top: 70px;
+    padding: 70px;
+    font-size: 3rem;
+}
+
+#table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 70px;
+    width: 100%;
+}
+
+.title2{
+    color: white;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    padding: 20px 30px;
+    border-style: inset;
+    border-width: 3.5px;
+    background-color: #00ca8f;
+    border-color: #00ca8f;
+    user-select: none;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+#specs .title2{
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+#best .title2{
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.text{
+    color: rgb(80, 80, 80);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    border-bottom-style: outset;
+    border-width: 1px;
+    border-color: rgb(100, 100, 100);
+    padding: 20px 30px;
+    transition: 0.2s;
+}
+
+.text:hover{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.specs2{
+    display: none;
+}
+
+@media screen and (max-width: 1000px){
+    #table{
+        flex-direction: column;
+        text-align: left;
+        padding-bottom: 0;  
+    }
+
+    #specs{
+        display: none;
+    }
+
+    .specs2{
+        display: inline-block;
+    }
+
+    .title2{
+        border-radius: 7px;
+    }
+    
+    .section{
+        width: 85%;
+        margin-bottom: 70px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    #title{
+        margin: 0;
+        font-size: 8vw;
+    }
+}

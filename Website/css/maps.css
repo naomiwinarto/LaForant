@@ -1,0 +1,145 @@
+/* ---------- Current Page ---------- */
+
+#gameinfo2 {
+    background-color: rgb(240, 240, 240);
+}
+
+#maps {
+    background-color: rgb(240, 240, 240);
+    border-color: #00ca8f;
+    border-left-style: solid;
+    border-left-width: 5px;
+}
+
+#maps:hover {
+    background-color: rgb(230, 230, 230);
+}
+
+/* ---------- Content ---------- */
+
+#content {
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#move{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;   
+    right: 10;
+    left: 10;
+}
+
+.move-button{
+    width: 50px;
+    height: 50px;
+    font-size: 3rem;
+    margin: 0 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #00ca8f;
+    border-style: inset;
+    border-color: #00ca8f;
+    border-width: 3.5px;
+    border-radius: 7px;    
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    color: white;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.2s;
+}
+
+.move-button:hover {
+    transform: scale(1.2);
+    background-color: #00efaa;
+    border-color: #00efaa;
+}
+
+.move-button:active {
+    transition: none;
+    border-style: outset;
+}
+
+#mapsimage{
+    transform: translateX(-10%);
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin-top: 140px;
+    margin-bottom: 70px;
+}
+
+#mapsimage img{
+    position: relative;
+    width: 100%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-width: 0;
+    border-radius: 7px;
+}
+
+#description-container {
+    position: absolute;
+    transform: translate(70%, 80%);
+    width: 25vw;
+    background-color: #00ca8f;
+    border-style: inset;
+    border-width: 3.5px;
+    border-radius: 7px;
+    border-color: #00ca8f;
+    color: white;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 70px;
+}
+
+#mapsname{
+    letter-spacing: 1px;
+    font-size: 1.5vw;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+#desc{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2vw;
+    padding: 15px;
+    padding-top: 0;
+}
+
+@media screen and (max-width: 1000px) {
+    #content{
+        flex-direction: column;
+    }
+    #mapsimage{
+        position: unset;
+        transform: none;
+        width: 85%;
+        margin-bottom: 0;
+    }
+    #description-container{
+        position: unset;
+        transform: none;
+        width: 85%;
+    }
+    #mapsname{
+        font-size: 1.1rem;
+    }
+    #desc{
+        font-size: 1rem;
+    }
+    #mapsimage{
+        margin-top: 70px;
+    }
+    #move{
+        position: unset;
+        width: 85%;
+        justify-content: flex-start;        
+        margin: 5vw 0;
+    }
+}

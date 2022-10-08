@@ -1,0 +1,190 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LaForant - Agents</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/agents.css">
+        <link rel="icon" href="../../Logo/LogoLF.png" type="image/x-icon">
+        <script src="https://kit.fontawesome.com/836602f769.js"crossorigin="anonymous"></script>
+        <script src="../js/sideNav.js"></script>
+        <script src="../js/jquery-3.5.1.min.js"></script>
+        <script src="../js/agents.js" defer></script>
+    </head>
+    <body>
+        <div id="header">
+            <div id="left">
+                <a href="home.html">
+                    <div class="nav-item">
+                        <img src="../../Logo/Logo-notext.png" alt="" />
+                    </div>
+                </a>
+
+                <div id="gameinfo">
+                    <div class="nav-item" id="gameinfo2">Game Info</div>
+                    <div id="dropdown">
+                        <a href="agents.html">
+                            <div class="nav-item">Agents</div>
+                        </a>
+                        <a href="maps.html">
+                            <div class="nav-item">Maps</div>
+                        </a>
+                    </div>
+                </div>
+
+                <a href="systemRequirements.html">
+                    <div class="nav-item" id="systemReq">
+                        System Requirements
+                    </div>
+                </a>
+            </div>
+
+            <div id="right">
+                <a href="preregister.html">
+                    <div id="preregister">Preregister</div>
+                </a>
+            </div>
+        </div>
+
+        <div id="side-nav">
+            <div class="side-button" id="open" onclick="openNav()">☰</div>
+
+            <div id="close">
+                <div>LaForant</div>
+                <div class="side-button" onclick="closeNav()"> < </div>
+            </div>
+
+            <a href="home.html">
+                <div class="side-item" id="home">Home</div>
+            </a>
+
+            <a href="agents.html">
+                <div class="side-item" id="agents">Agents</div>
+            </a>
+
+            <a href="maps.html">
+                <div class="side-item" id="maps">Maps</div>
+            </a>
+
+            <a href="systemRequirements.html">
+                <div class="side-item" id="sysReq">System Requirements</div>
+            </a>
+
+            <a href="preregister.html">
+                <div class="side-item" id="preReg">Preregister</div>
+            </a>
+        </div>
+
+        <div id="content">
+            <div id="left-content">
+                <div id="agentsname"> Breach </div>
+                <div id="agentsimage">
+                    <img src="../../Image Source/characters/Breach.png" alt="">
+                </div>
+            </div>
+            <div id="move">
+                <div class="move-button" id="prev" onclick="previmg()"> < </div>
+                <div class="move-button" id="next" onclick="nextimg()"> > </div>
+            </div>
+            <div id="right-content">
+                <div class="skill-container" id="one">
+                    <div class="skill">
+                        <div class="skillimg">
+                            <img src="../../Image Source/skills/Breach/aftershock-white.png" alt="">
+                        </div>
+                        <div class="skillname">
+                            Aftershock
+                        </div> 
+                    </div>
+                    <div class="desc">
+                        Equip a fusion charge. Fire the charge to
+                        set a slow-actin burst through the wall. The
+                        burst dows heavy damage to anyone caught in
+                        its area.
+                    </div>
+                </div>
+                <div class="skill-container" id="two">
+                    <div class="skill">
+                        <div class="skillimg">
+                            <img src="../../Image Source/skills/Breach/fault-line-white.png" alt="">
+                        </div>
+                        <div class="skillname">
+                            Fault Line
+                        </div> 
+                    </div>
+                    <div class="desc">
+                        Equip a seismic blast. Hold Fire to increase
+                        the distance. Release to set off the quake,
+                        dazing all players in its zone and in a line
+                        up to the zone.
+                    </div>
+                </div>
+                <div class="skill-container" id="three">
+                    <div class="skill">
+                        <div class="skillimg">
+                            <img src="../../Image Source/skills/Breach/flashpoint-white.png" alt="">
+                        </div>
+                        <div class="skillname">
+                            Flashpoint
+                        </div>
+                    </div>
+                    <div class="desc">
+                        Equip a blinding charge. Fire the charge to
+                        set a fast-acting burst through the wall.
+                        The charge detonates to blind all players
+                        looking at it.
+                    </div>
+                </div>
+                <div class="skill-container" id="four">
+                    <div class="skill">
+                        <div class="skillimg">
+                            <img src="../../Image Source/skills/Breach/rolling-thunder-white.png" alt="">
+                        </div>
+                        <div class="skillname">
+                            Rolling Thunder
+                        </div>
+                    </div>
+                    <div class="desc">
+                        Equip a seismic charge. Fire to send a
+                        cascading quake through all terrain in a
+                        large cone. The quake dazes and knocks up
+                        anyone caught in it.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div id="logo">
+                <img src="../../Logo/Logo.png" alt="" />
+            </div>
+
+            <div id="contact">
+                <div class="icon">
+                    <a href="https://www.facebook.com" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+                <div class="icon">
+                    <a href="https://www.youtube.com" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+                <div class="icon">
+                    <a href="https://www.instagram.com" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div id="copyright">
+                <div>© 2021 LaForant, Inc.</div>
+                <div>
+                    LaForant and any associated logos are trademarks of
+                    LaForant, Inc.
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
